@@ -7,32 +7,39 @@
 </head>
 <body>
     <body>
-        <header>Cadastro</header>
+      <header><h1>Cadastro</header></h1>
+
+      <form class="formulario" action="/registro" method="POST">
     
-        <form class="formulario" action="/registro" method="POST">
-    
-            <div class="cx1">
-                <div>
-                    <label for="nome">Nome</label>
+        <div class="cx1">
+          <div>
+            <label for="nome">Nome: </label>
                 <input type="text" name="nome" maxlength="100" placeholder="Digite seu Nome..">
             </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email"  placeholder="Digite seu E-mail">
-            </div>
             
+            <br>
+    
             <div>
-               <label for="telefone">Telefone</label>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="Digite seu E-mail">
+            </div>
+    
+            <br>
+    
+            <div>
+               <label for="telefone">Telefone: </label>
                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
             </div>
-            
+    
+            <br>
+    
              </div>
             <div id="datanascimento">
-            <label for="data"><h2>Data de Nascimento</h2></label>
+            <label for="data"><p>Data de Nascimento:</p></label>
             <input type="date" id="data" name="data">
-          </div>
-            
+            </div>
     
+            <br>
     
             <div>
                 <label for="idade"><p>Tem Mais de 18 Anos?</p></label>
@@ -41,22 +48,27 @@
                 <input type="radio" name="idade">
                 <label for="nao" id="nao">Não</label>
             </div>
-        
+    
+            <br>
+            
               <div>
               <p id="sla1"></p>
                 <p class="titulos">Escolha Seus Pontos Turisticos</p>
                 <select>
-                  <optgroup label="lugar">
+                  <optgroup label="Local">
+                    <option></option>
                     <option>Maracanã</option>
                     <option>Pão de Açúcar</option>
                     <option>Cristo Redentor </option>
                     <option>Do Leme ao Pontal</option>
-                    <option>Praia de Copa Cabana</option>
+                    
                   </optgroup>
                 </select>
             </div>
             <div id="opcoes">
             <p id="opcpes2"> 
+              
+              <br>
               
                 </p><p class="titulos">Quais seus interesses?</p>
     
@@ -77,13 +89,17 @@
                    
             </div>
     
-            <div id="botao-1">
-    
+            <div id="button">
+            
+            <br>
+            
             <button type="submit" class="enviar">Enviar</button>
     
           </div>
     
-          <div id="botao2">
+          <br> 
+          
+          <div id="button">
             <button type="reset" class="cancelar">Cancelar</button>
           </div>
     
